@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp">
+
+    <ImageView
+        android:id="@+id/ivRoomImage"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_iv"
+        android:clipToOutline="true"
+        android:src="@drawable/hotelimage" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="001"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$20/Night"
+        android:textColor="@color/palesky"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESERVED"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="00dp"
+        android:layout_marginEnd="32dp"/>
+
+</com.google.android.material.card.MaterialCardView>
